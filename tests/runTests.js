@@ -1,5 +1,5 @@
-var note = new Note();
+var note = new Note("New Note");
 
 (function(){
-  assert.isEqual(note.getNotes(), "I'm a note")
+  assert.isEqual(note.getNote(), "New Note")
 })()
