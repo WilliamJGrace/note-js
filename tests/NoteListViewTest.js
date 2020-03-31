@@ -13,7 +13,7 @@ describe("Notelistview", () =>{
   describe("#showList", () => {
     it("shows an array", () => {
       // console.log(notelistview.showList())
-      expect(notelistview.showList()).arrayToBe(["hello", "hi"])
+      expect(notelistview.showList()).toBe("<ul><li><div>hello</div></li><li><div>hi</div></li></ul>")
 
 
     })

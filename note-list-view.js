@@ -8,6 +8,10 @@ Notelistview.prototype.getList = function () {
 
 Notelistview.prototype.showList = function () {
 
-  return this.getList().viewNotes();
-
+  var list = this.getList().viewNotes();
+  // for(var i=0;i<list.length;i++){
+    var list2 = "<ul><li><div>" +  list.join("</div></li><li><div>") + "</div></li></ul>"; 
+  //   return "<li><div>" + list[i] + "</div></li>"
+  // }
+return list2
 };
