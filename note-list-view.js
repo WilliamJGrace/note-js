@@ -9,9 +9,11 @@ Notelistview.prototype.getList = function () {
 Notelistview.prototype.showList = function () {
 
   var list = this.getList().viewNotes();
-  // for(var i=0;i<list.length;i++){
+  if(list.length === 0){
+    throw new Error("There are no items in your list")
+  }
+  else{
     var list2 = "<ul><li><div>" +  list.join("</div></li><li><div>") + "</div></li></ul>"; 
-  //   return "<li><div>" + list[i] + "</div></li>"
-  // }
-return list2
+    return list2;
+  };
 };
