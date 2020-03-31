@@ -1,0 +1,28 @@
+{
+  "name": "notebook",
+  "version": "1.0.0",
+  "description": "notebook app",
+  "main": "note-model.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "open spec_runner.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilliamJGrace/note-js.git"
+  },
+  "keywords": [
+    "note"
+  ],
+  "author": "Will Grace",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WilliamJGrace/note-js/issues"
+  },
+  "homepage": "https://github.com/WilliamJGrace/note-js#readme",
+  "dependencies": {
+    "http-server": "^0.12.1"
+  }
+}
