@@ -8,7 +8,7 @@ import { describe, it, expect, matchers } from './test_framework.js';
 var note = new Note("I'm a Note");
 
 describe("Note", () => {
-  describe("#text", () =>{
+  describe("#getNote", () =>{
       it("returns a note", () =>{
 
         expect(note.getNote()).toBe("I'm a Note")

@@ -13,8 +13,19 @@ const matchers = (expectation) => ({
       console.error('fail')
       return false
     }
+  },
+  arrayToBe: (assertion) => {
+    for(var i=0;i<assertion.length;i++){
+      if(expectation[i] !== assertion[i]){
+        console.error('fail')
+        return false
+      }
+    }
+    console.log('pass')
+    return true
+    }
   }
-})
+)
 export {
   describe,
   it,
