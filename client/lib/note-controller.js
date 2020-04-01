@@ -7,7 +7,10 @@ Notecontroller.prototype.outputToHTML = function () {
   document.getElementById('app').innerHTML = this.noteListView.showList()
 
 };
-// let notelist = new Notelist();
-// notelist.createNote("Hi there")
-// let notecontroller = new Notecontroller(notelist);
-// notecontroller.outputToHTML();
+
+
+
+let notelist = new Notelist();
+notelist.createNote("Hi there")
+let notecontroller = new Notecontroller(notelist);
+notecontroller.outputToHTML();
