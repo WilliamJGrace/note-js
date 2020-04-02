@@ -21,3 +21,7 @@ Notelistview.prototype.showList = function () {
     return list2;
   };
 };
+
+(function hi() {
+       window.addEventListener("hashchange", console.log("hihi"));
+     })();

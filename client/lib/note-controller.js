@@ -10,7 +10,12 @@ Notecontroller.prototype.outputToHTML = function () {
 
 //Will need to delete code below to stop errors when testing
 
-// let notelist = new Notelist();
-// notelist.createNote("Hi there")
-// let notecontroller = new Notecontroller(notelist);
-// notecontroller.outputToHTML();
+let notelist = new Notelist();
+notelist.createNote("Hi there")
+let notecontroller = new Notecontroller(notelist);
+notecontroller.outputToHTML();
+
+function hi() {
+       window.addEventListener("hashchange", console.log("hihi"));
+     }
+hi()
