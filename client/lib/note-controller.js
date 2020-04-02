@@ -11,7 +11,8 @@ Notecontroller.prototype.outputToHTML = function () {
 //Will need to delete code below to stop errors when testing
 
 let notelist = new Notelist();
-notelist.createNote("Hi there")
+let note1 = new Note("Hi there");
+notelist.createNote(note1)
 let notecontroller = new Notecontroller(notelist);
 notecontroller.outputToHTML();
 

@@ -13,11 +13,9 @@ var notelist = new Notelist();
 describe("NoteList", () => {
   describe("#createNotes", () =>{
       it("creates and stores a note", () =>{
-        notelist.createNote(note.getNote())
-        notelist.createNote(note2.getNote())
-
-
-        expect(notelist.viewNotes()).arrayToBe(["a note", "another note"])
+        notelist.createNote(note)
+        notelist.createNote(note2)
+        expect(notelist.viewNotes()).arrayToBe([note , note2])
       })
   })
 

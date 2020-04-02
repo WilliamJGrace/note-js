@@ -11,6 +11,7 @@ Notelistview.prototype.showList = function () {
   var list = this.getList().viewNotes();
 // loop to reduce characters down to 20
   for(var i=0;i<list.length;i++){
+    list[i] = list[i].getNote();
     list[i] = list[i].substr(0,20)
   }
   if(list.length === 0){
