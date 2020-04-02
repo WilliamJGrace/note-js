@@ -11,6 +11,8 @@ const matchers = (expectation) => ({
       return true
     } else {
       console.error('fail')
+      console.log(`expected %c${assertion} %cbut got %c${expectation} %cinstead`, 'font-weight: bold; color: #ffb375;', '', 'font-weight: bold; color: #ffb375;', '')
+
       return false
     }
   },
@@ -18,6 +20,7 @@ const matchers = (expectation) => ({
     for(var i=0;i<assertion.length;i++){
       if(expectation[i] !== assertion[i]){
         console.error('fail')
+          console.log(`expected %c${assertion} %cbut got %c${expectation} %cinstead`, 'font-weight: bold; color: #ffb375;', '', 'font-weight: bold; color: #ffb375;', '')
         return false
       }
     }

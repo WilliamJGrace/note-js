@@ -1,10 +1,9 @@
 "use strict";
 import { describe, it, expect, matchers } from './test_framework.js';
 var notelist = new Notelist();
-var note1 = new Note("helloIamanotethatislongerthan20characters")
-var note2 = new Note("hi")
-notelist.createNote(note1)
-notelist.createNote(note2)
+
+notelist.createNote("helloIamanotethatislongerthan20characters")
+notelist.createNote("hi")
 var notelistview = new Notelistview(notelist);
 describe("Notelistview", () =>{
   describe("#getList", () =>{
@@ -17,6 +16,10 @@ describe("Notelistview", () =>{
 
       expect(notelistview.showList()).toBe("<ul><li><div>helloIamanotethatisl</div></li><li><div>hi</div></li></ul>")
 
+
+    })
+
+    it("changes the url when clicked", () => {
 
     })
   })
