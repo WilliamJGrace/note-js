@@ -8,15 +8,18 @@ Notecontroller.prototype.outputToHTML = function () {
 
 };
 
+Notecontroller.prototype.hashChange = function () {
+  window.addEventListener("hashchange", () => {console.log("hihi")});
+
+};
+
 //Will need to delete code below to stop errors when testing
 
 let notelist = new Notelist();
-
 notelist.createNote("Hi there")
-let notecontroller = new Notecontroller(notelist);
-notecontroller.outputToHTML();
+notelist.createNote("HEllo there")
 
-function hi() {
-       window.addEventListener("hashchange", console.log("hihi"));
-     }
-hi()
+let notecontroller = new Notecontroller(notelist);
+
+notecontroller.outputToHTML();
+notecontroller.hashChange();
