@@ -1,7 +1,7 @@
 "use strict";
 import { describe, it, expect, matchers } from './test_framework.js';
 var notelist = new Notelist();
-notelist.createNote("hello")
+notelist.createNote("helloIamanotethatislongerthan20characters")
 notelist.createNote("hi")
 var notelistview = new Notelistview(notelist);
 describe("Notelistview", () =>{
@@ -11,9 +11,9 @@ describe("Notelistview", () =>{
     })
   })
   describe("#showList", () => {
-    it("shows an array", () => {
-      // console.log(notelistview.showList())
-      expect(notelistview.showList()).toBe("<ul><li><div>hello</div></li><li><div>hi</div></li></ul>")
+    it("joings the array and adds HTML", () => {
+      
+      expect(notelistview.showList()).toBe("<ul><li><div>helloIamanotethatisl</div></li><li><div>hi</div></li></ul>")
 
 
     })
