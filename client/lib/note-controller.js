@@ -9,9 +9,16 @@ Notecontroller.prototype.outputToHTML = function () {
 };
 
 Notecontroller.prototype.hashChange = function () {
-  window.addEventListener("hashchange", () => {console.log("hihi")});
+  window.addEventListener("hashchange",
+  (location) => {
+    var id = window.location.hash.split("notes/")[1]
+    var singlenoteview = new Singlenoteview(this.noteList.noteList[id])
+    document.getElementById('app').innerHTML = singlenoteview.showNote();
+      })
+    }
 
-};
+
+
 
 //Will need to delete code below to stop errors when testing
 

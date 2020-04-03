@@ -11,6 +11,7 @@ Singlenoteview.prototype.getNoteModel = function () {
 };
 
 Singlenoteview.prototype.showNote = function () {
+  console.log(this.noteModel)
   var note = this.getNoteModel().getNote()
   return `<div>${note}</div>`
 }

@@ -14,8 +14,7 @@ describe("Notelistview", () =>{
   describe("#showList", () => {
     it("joings the array and adds HTML", () => {
 
-      expect(notelistview.showList()).toBe("<ul><li><div><a href=notes/0>helloIamanotethatisl</a></div></li><li><div><a href=notes/1>hi</a></div></li></ul>")
-
+      expect(notelistview.showList()).toBe("<ul><li><div><a href=#notes/0>helloIamanotethatisl</a></div></li><li><div><a href=#notes/1>hi</a></div></li></ul>")
 
     })
 
