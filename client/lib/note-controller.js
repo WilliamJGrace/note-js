@@ -21,15 +21,10 @@ Notecontroller.prototype.hashChange = function () {
 Notecontroller.prototype.textFormSubmit = function () {
   document.getElementById("text").addEventListener("submit", () => {
       text = document.getElementById('input').value
-      console.log(this.noteList)
       this.noteList.createNote(text)
       this.noteListView = new Notelistview(this.noteList);
-      console.log(this.noteListView)
-      console.log(this.noteListView.showList())
-
       this.outputToHTML();
       event.preventDefault()
-
     });
 };
 
