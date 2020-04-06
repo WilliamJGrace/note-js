@@ -11,7 +11,7 @@ Notecontroller.prototype.outputToHTML = function () {
 Notecontroller.prototype.hashChange = function () {
   window.addEventListener("hashchange",
   (location) => {
-    // event.preventDefault()
+    event.preventDefault()
     var id = window.location.hash.split("notes/")[1]
     var singlenoteview = new Singlenoteview(this.noteList.noteList[id])
     document.getElementById('app').innerHTML = singlenoteview.showNote();
@@ -34,8 +34,8 @@ Notecontroller.prototype.textFormSubmit = function () {
 //Will need to delete code below to stop errors when testing
 
 let notelist = new Notelist();
-notelist.createNote("Hi there")
-notelist.createNote("HEllo there")
+// notelist.createNote("Hi there")
+// notelist.createNote("HEllo there")
 
 let notecontroller = new Notecontroller(notelist);
 

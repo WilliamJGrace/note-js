@@ -15,10 +15,10 @@ Notelistview.prototype.showList = function () {
     listText.push(list[i].getNote().substr(0,20))
     // list[i] = list[i].substr(0,20)
   }
-  if(list.length === 0){
-    throw new Error("There are no items in your list")
-  }
-  else{
+  // if(list.length === 0){
+  //   throw new Error("There are no items in your list")
+  // }
+  // else{
     str = "<ul>"
     for(var i=0;i<list.length;i++){
       str = str.concat(`<li><div><a href=#notes/${list[i].id}>${listText[i]}</a></div></li>`)
@@ -28,7 +28,7 @@ Notelistview.prototype.showList = function () {
     return str
     // var list2 = "<ul><li><div><a href=notes`${}" +  listText.join("</div></li><li><div>") + "</div></li></ul>";
     // return list2;
-  };
+  // };
 };
 
 // (function hi() {
